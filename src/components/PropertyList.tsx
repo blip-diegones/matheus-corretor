@@ -235,7 +235,7 @@ export function PropertyList({ properties, filters, onContactClick }: PropertyLi
         {/* Modal de Detalhes do Imóvel */}
         <AnimatePresence>
           {selectedProperty && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+            <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-6 overflow-hidden">
               {/* Backdrop */}
               <motion.div
                 initial={{ opacity: 0 }}
@@ -247,10 +247,10 @@ export function PropertyList({ properties, filters, onContactClick }: PropertyLi
 
               {/* Modal Box */}
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                initial={{ opacity: 0, scale: 0.98, y: 30 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                className="relative bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl z-10 text-left"
+                exit={{ opacity: 0, scale: 0.98, y: 30 }}
+                className="relative bg-white rounded-t-2xl sm:rounded-2xl max-w-3xl w-full max-h-[92vh] sm:max-h-[90vh] overflow-y-auto shadow-2xl z-10 text-left mt-auto sm:mt-0"
               >
                 {/* Close Button */}
                 <button

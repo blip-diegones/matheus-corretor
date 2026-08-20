@@ -60,20 +60,20 @@ export function CityGuide() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B231B]/95 via-[#0B231B]/30 to-transparent" />
 
-          <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4 text-white">
+          <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-3 text-white">
             <div>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#C89B3C] text-[#0B231B] text-[10px] uppercase font-bold tracking-widest mb-2 shadow-md">
                 <Compass className="w-3.5 h-3.5" />
                 Vista Panorâmica Real
               </span>
-              <h3 className="font-serif text-2xl sm:text-4xl font-normal text-white drop-shadow-md">
+              <h3 className="font-serif text-xl sm:text-4xl font-normal text-white drop-shadow-md">
                 São Lourenço · Sul de Minas Gerais
               </h3>
               <p className="text-white/80 text-xs sm:text-sm max-w-xl mt-1 font-light leading-relaxed">
                 Águas minerais medicinais, ar puro da serra e segurança ímpar com alto índice de desenvolvimento humano.
               </p>
             </div>
-            <div className="flex items-center gap-2 bg-[#0B231B]/80 backdrop-blur-md px-4 py-2 rounded-xl border border-[#C89B3C]/40 text-xs text-[#E2C882] font-medium">
+            <div className="hidden sm:flex items-center gap-2 bg-[#0B231B]/80 backdrop-blur-md px-4 py-2 rounded-xl border border-[#C89B3C]/40 text-xs text-[#E2C882] font-medium">
               <MapPin className="w-4 h-4 text-[#C89B3C]" />
               <span>Circuito das Águas Paulista & Mineiro</span>
             </div>

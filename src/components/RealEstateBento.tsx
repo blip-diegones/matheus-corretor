@@ -5,7 +5,7 @@ export const BentoGrid: React.FC = () => {
   return (
     <section className="w-full bg-[#071913] py-16 px-4 md:px-8 text-[#F6F2E8]">
       <div className="max-w-6xl mx-auto space-y-6">
-        
+
         {/* Grid Container
             - Mobile: 1 coluna, altura automática (sem sobreposição/encavalamento)
             - Desktop (md+): Grid responsivo de 2 a 3 colunas

@@ -50,7 +50,7 @@ export function SearchWidget({
               key={tab}
               type="button"
               onClick={() => handleFinalidadeChange(tab)}
-              className={`flex-1 py-4 text-center text-xs font-semibold uppercase tracking-widest transition-all relative cursor-pointer ${
+              className={`flex-1 py-3 sm:py-4 text-center text-[10px] sm:text-xs font-semibold uppercase tracking-widest transition-all relative cursor-pointer ${
                 isActive ? 'text-white bg-[#C89B3C]/10' : 'text-white/60 hover:text-white hover:bg-white/5'
               }`}
             >
@@ -71,8 +71,8 @@ export function SearchWidget({
       </div>
 
       {/* Main Form Fields */}
-      <div className="p-6 md:p-7 space-y-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+      <div className="p-4 sm:p-6 md:p-7 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 items-end">
           {/* Tipo de Imóvel */}
           <div className="space-y-1.5 text-left">
             <label htmlFor="searchTipo" className="block text-[10px] uppercase font-bold tracking-wider text-[#E2C882]">
@@ -174,7 +174,7 @@ export function SearchWidget({
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="pt-4 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 text-left"
+              className="pt-4 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-left"
             >
               <div className="space-y-1">
                 <label className="text-[10px] uppercase font-semibold text-white/70">Quartos</label>
@@ -230,7 +230,7 @@ export function SearchWidget({
                 />
               </div>
 
-              <div className="flex items-end col-span-2 sm:col-span-4 lg:col-span-1">
+              <div className="flex items-end col-span-1 sm:col-span-2 lg:col-span-1">
                 <button
                   type="button"
                   onClick={() => handleChange('piscina', !filters.piscina)}

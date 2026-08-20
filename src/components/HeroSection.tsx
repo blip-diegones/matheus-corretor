@@ -16,7 +16,7 @@ export function HeroSection({
   onResetFilters,
 }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[94vh] flex flex-col justify-end text-white overflow-hidden pt-28 pb-16">
+    <section className="relative min-h-[100svh] sm:min-h-[94vh] flex flex-col justify-end text-white overflow-hidden pt-24 sm:pt-28 pb-12 sm:pb-16">
       {/* Background Image: Drone Photo of São Lourenço - MG */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-1000"
@@ -30,7 +30,9 @@ export function HeroSection({
       </div>
 
       {/* Watermark */}
-      <div className="absolute top-[16%] right-[-3%] font-serif text-[13vw] font-light text-white/[0.04] uppercase select-none pointer-events-none tracking-tighter whitespace-nowrap z-0">
+      <div
+        className="absolute top-[16%] right-[-3%] font-serif text-[18vw] sm:text-[13vw] font-light text-white/[0.04] uppercase select-none pointer-events-none tracking-tighter whitespace-nowrap z-0 overflow-hidden max-w-full"
+      >
         SÃO LOURENÇO
       </div>
 
@@ -92,7 +94,7 @@ export function HeroSection({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6 text-xs uppercase tracking-[0.2em] text-white/70 font-medium px-1 pt-1"
+            className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-6 text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/70 font-medium px-1 pt-1"
           >
             <span className="flex items-center gap-2 text-white/90">
               <Award className="w-3.5 h-3.5 text-[#C89B3C]" />

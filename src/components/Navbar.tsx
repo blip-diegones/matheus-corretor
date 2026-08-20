@@ -40,10 +40,10 @@ export function Navbar({ onContactClick }: NavbarProps) {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#" className="flex flex-col group text-left">
-            <span className="font-serif text-2xl md:text-3xl text-white font-medium tracking-tight group-hover:text-[#E2C882] transition-colors">
+            <span className="font-serif text-xl md:text-3xl text-white font-medium tracking-tight group-hover:text-[#E2C882] transition-colors">
               Matheus Dias
             </span>
-            <span className="text-[10px] uppercase tracking-[0.28em] text-[#E2C882] font-medium mt-0.5">
+            <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.28em] text-[#E2C882] font-medium mt-0.5">
               Corretor de Imóveis · CRECI-MG
             </span>
           </a>
@@ -73,7 +73,7 @@ export function Navbar({ onContactClick }: NavbarProps) {
 
             <button
               onClick={() => onContactClick('Olá Matheus! Gostaria de agendar uma consultoria.')}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-[#C89B3C]/50 hover:border-[#C89B3C] text-white hover:text-[#E2C882] text-xs font-medium uppercase tracking-wider transition-all"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded border border-[#C89B3C]/50 hover:border-[#C89B3C] text-white hover:text-[#E2C882] text-xs font-medium uppercase tracking-wider transition-all"
             >
               <Phone className="w-3.5 h-3.5 text-[#C89B3C]" />
               <span className="hidden lg:inline">Fale Comigo</span>
